@@ -1,9 +1,8 @@
-// Fig 2.15: Comparison.java
-// Compare integers using if statements, relational operators
-// and equality operators.
+// IsIntegerAMultiple.java
+// Determine whether one integer is a multiple of the other.
 import java.util.Scanner; // program uses class Scanner
 
-public class Comparison
+public class IsIntegerAMultiple
 {
 	// main method begins execution of Java application
 	public static void main( String args[] )
@@ -20,27 +19,17 @@ public class Comparison
 		System.out.print( "Enter second integer: " ); // prompt
 		number2 = input.nextInt(); // read second number from user
 	
-		if ( number1 == number2 )
-			System.out.printf( "%d == %d\n", number1, number2 );
-	
-		if ( number1 != number2 )
-			System.out.printf( "%d != %d\n", number1, number2 );
-	
-		if ( number1 < number2 )
-			System.out.printf( "%d < %d\n", number1, number2 );
-	
-		if ( number1 > number2 )
-			System.out.printf( "%d > %d\n", number1, number2 );
-	
-		if ( number1 <= number2 )
-			System.out.printf( "%d <= %d\n", number1, number2 );
-	
-		if ( number1 >= number2 )
-			System.out.printf( "%d >= %d\n", number1, number2 );
+		if ( (number2 % number1) == 0 ){
+			System.out.println( number1 +  " is a multiple of " + number2 );
+		}
+
+		else {
+		    System.out.println( number1 +  " is not a multiple of " + number2 );
+		}
 	
 	} // end method main
 	
-} // end class Comparison
+} // end class IsIntegerAMultiple
 
 /**************************************************************************
  * (C) Copyright 1992-2007 by Deitel & Associates, Inc. and               *
